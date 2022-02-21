@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
+
 // Copyright (C) 2021 Dai Foundation
 //
 // This program is free software: you can redistribute it and/or modify
@@ -14,16 +15,16 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-pragma solidity ^0.6.12;
+pragma solidity >=0.6.12;
 
 import "ds-test/test.sol";
 import "ds-value/value.sol";
 import "ds-token/token.sol";
-import {Vat}              from "dss/vat.sol";
-import {Spotter}          from "dss/spot.sol";
-import {Vow}              from "dss/vow.sol";
-import {GemJoin, DaiJoin} from "dss/join.sol";
-import {Dai}              from "dss/dai.sol";
+import {Vat}              from "dss-core/vat.sol";
+import {Spotter}          from "dss-core/spot.sol";
+import {Vow}              from "dss-core/vow.sol";
+import {GemJoin, DaiJoin} from "dss-core/join.sol";
+import {Dai}              from "dss-core/dai.sol";
 
 import "./flash.sol";
 import "./base/FlashLoanReceiverBase.sol";
